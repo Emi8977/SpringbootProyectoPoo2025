@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Crear Venta</title>
+    <link rel="stylesheet" href="/css/estilosVenta.css" />
+</head>
+<body>
+
+    <!-- Banner comunista -->
+    <div class="banner-comunista">
+        <div class="estrella">★</div>
+        <div class="titulo-comunista">Cine Popular</div>
+        <h1 class="titulo-comunista"> y Nacional</h1> 
+        <div class="titulo-comunista2">Mariscal Tito</div>
+    </div>
+
+    <div class="nav-links">
+    <a href="/index.html">PAGINA PRINCIPAL</a>
+    <a href="/crear-cliente.html">GESTION DE CLIENTES</a>
+    </div>
+
+
+    <div class="container">
+        <h2>Registrar nueva venta</h2>
+
+        <form id="ventaForm">
+            <label for="clienteSelect">Cliente:</label>
+            <select id="clienteSelect" required>
+                <option value="" disabled selected hidden>Seleccione un cliente</option>
+            </select>
+
+            <label for="pagoSelect">Método de Pago:</label>
+            <select id="pagoSelect" required>
+                <option value="" disabled selected hidden>Seleccione un método de pago</option>
+            </select>
+
+            <label for="funcionSelect">Función:</label>
+            <select id="funcionSelect" required>
+                <option value="" disabled selected hidden>Seleccione una función</option>
+            </select>
+
+            <label for="cineSelect">Cine:</label>
+            <select id="cineSelect" required>
+                <option value="" disabled selected hidden>Seleccione un cine</option>
+            </select>
+
+            <label for="fechaVenta">Fecha de la Venta:</label>
+            <input type="date" id="fechaVenta" required />
+
+            <button type="submit">Crear Venta</button>
+        </form>
+    </div>
+
+    <div class="sales-list-container">
+        <h2>Ventas Registradas - Recargue la pagina</h2>
+        <table class="sales-table">
+            <thead>
+                <tr>
+                    <th>Ticket (id venta)</th>
+                    <th>Fecha</th>
+                    <th>Cliente</th>
+                    <th>Método de Pago</th>
+                    <th>Funciones</th>
+                </tr>
+            </thead>
+            <tbody id="salesTableBody">
+                <!-- Datos dinámicos -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="/js/funcionesVenta.js"></script>
+</body>
+</html>
+
+
+

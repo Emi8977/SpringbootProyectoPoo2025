@@ -1,0 +1,146 @@
+body {
+    font-family: 'Arial Black', sans-serif;
+    background-color: #fdf6e3;
+    color: #1a1a1a;
+    margin: 0;
+    padding: 0;
+}
+
+.banner-comunista {
+    background-color: #b00000;
+    color: #ffdd00;
+    text-align: center;
+    padding: 15px 10px; /* ↓ antes era 30px 20px */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* sombra más suave */
+}
+
+.estrella {
+    font-size: 40px; /* ↓ antes era 60px */
+    margin-bottom: 5px;
+}
+
+.titulo-comunista {
+    font-size: 24px; /* ↓ antes era 36px */
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.titulo-comunista2 {
+    font-family: Impact, Haettenschweiler, 'Arial Black', sans-serif;
+    font-size: 56px; /* ↓ antes era 80px */
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 3px;
+    color: #fbe300;
+    text-shadow:
+        -1.5px -1.5px 0 #000,
+        1.5px 1.5px 0 #000,
+        0 0 4px rgba(0, 0, 0, 0.3);
+    transform: skewX(-2deg);
+    filter: contrast(1.2);
+}
+/**/
+.nav-links {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.nav-links a {
+    display: inline-block;
+    background-color: #b00000;
+    color: #ffdd00;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 12px 20px;
+    margin: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #880000;
+}
+
+
+/**/
+.container {
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+h2 {
+    text-align: center;
+    color: #b00000;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 15px;
+    display: block;
+}
+
+select,
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 18px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #b00000;
+    color: #ffdd00;
+    font-weight: bold;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #880000;
+}
+
+.sales-list-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.sales-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.sales-table th,
+.sales-table td {
+    border: 1px solid #b00000;
+    padding: 12px;
+    text-align: center;
+}
+
+.sales-table th {
+    background-color: #b00000;
+    color: #ffdd00;
+}
+
+.sales-table tbody tr:nth-child(even) {
+    background-color: #fce5e5;
+}
